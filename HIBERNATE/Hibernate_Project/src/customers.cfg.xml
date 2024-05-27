@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+<property name="hibernate.connection.username">sys as sysdba</property>
+<property name="hibernate.connection.password">Myoracle@1234</property>
+<property name="hibernate.connection.pool_size">99</property>
+<property name="dialect">org.hibernate.dialect.OracleDialect</property>
+<property name="hibernate.show_sql">true</property>
+<property name="hbm2ddl.auto">update</property>
+<mapping class = "com.jtc.hibernateAnnotation.Customer"/>
+</session-factory>
+</hibernate-configuration>
